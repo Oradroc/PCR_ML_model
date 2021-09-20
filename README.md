@@ -16,17 +16,10 @@ A tool for researchers in the biological sciences to predict PCR outcome of a de
 ### Executing program
 
 For using the model as a reaction predictor: 
-* First enter user input into the Data collection spreadsheet and save 'collected_data" sheet.
-* Change filepath and filename in PREDICTION_PCR_Feature_Engineering_7-10-20_2-8-21.ipynb and run notebook for reaction processing.
-* Change filepath, filename (processed PCR reactions name), and export name in PCR_Predictor.ipynb and run the notebook to obtain predictions and useful biophyscial parameters for reaction design.
-
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+* First enter user input into the Data collection spreadsheet UI macro on the first sheet of "PCR_Reaction_Collection_Form_Name.xlsx" and save the output 'collected_data" sheet to YourRaw_collected_data.csv or whatever you would like.
+* Second execute the feature engineering script using the following line: python Prediction_PCR_Feature_Engineering.py YourRaw_collected_data.csv predictMyPCRs.csv
+* Third execute the prediction script on your processed PCR data: python PCR_Predictor.py predictMyPCRs.csv outcomes 
+* You can label "outcomes" file will be output with todays date for tracking and contains the predicted outcomes of your PCRs and biophysical parameters calculated from your PCRs that may help guide your reaction redesign if necessary.
 
 ## Authors
 Contributors names and contact info
