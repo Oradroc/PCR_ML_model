@@ -7,6 +7,7 @@ A random forest classifier (RFC) for predicting the outcome of a predesigned pol
 A tool for researchers in the biological sciences to predict PCR outcome of a designed reaction prior to purchasing reagents and running PCRs to reduce overall reaction failures as descried in (Cordaro et al. 2021). Researchers can enter information for designed reactions into the PCR_Reaction_Collection_Form_Name.xlsx and export the colected_data sheet as a csv. Researchers can then open the feature engineering notebook for reaction prediction using the scripts in the "PredictMyPCRs" folder using the instructions below to first execute FE and then predict their reactions. After executing the predictor script, the researcher can use the output spreadsheet to view the outcome of their reaction predicted in addition to biophysical parameter estimates used by the model that may help in guiding the redesign of their PCR reactions.
 
 Information about model development can be found on biorxiv.
+
 Cordaro, Nicholas J., et al. “Optimizing Polymerase Chain Reaction (Pcr) Using Machine Learning.” 2021, doi:10.1101/2021.08.12.455589. 
 
 ## Getting Started
