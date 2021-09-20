@@ -25,7 +25,8 @@ For using the model as a reaction predictor:
 * You can label "outcomes" file will be output with todays date for tracking and contains the predicted outcomes of your PCRs and biophysical parameters calculated from your PCRs that may help guide your reaction redesign if necessary.
 
 ## Authors
-Contributors names and contact info
+Contributors names
 
-Nicholas Cordaro - nicholas.cordaro@colorado.edu
-Aaron Clauset - Aaron.clauset@colorado.edu
+Nicholas Cordaro
+Andy Kavran
+Aaron Clauset
