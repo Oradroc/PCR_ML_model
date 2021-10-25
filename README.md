@@ -15,7 +15,7 @@ Cordaro, Nicholas J., et al. “Optimizing Polymerase Chain Reaction (PCR) Using
 ### Dependencies
 
 * Everything was developed in jupyter notebook using Python version 3.6.13 on Windows 10 using Anaconda.
-* Libraries: pandas, numpy, os, matplotlib, sklearn, primer3, melting, Bio.SeqUtils, datetime, xlsxwriter
+* Libraries: pandas, numpy, matplotlib, sklearn, primer3, melting, Bio.SeqUtils, datetime, xlsxwriter
 
 ### Executing program
 
