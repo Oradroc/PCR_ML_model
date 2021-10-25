@@ -44,41 +44,41 @@ def ChangeName(polymerase):
     
    
     '''
-    Taq=['Taq DNA Polymerase']
+    Taq=['Taq','Taq DNA Polymerase']
     for Pol in Taq:
         if Pol==polymerase:
             return "Taq"
-    Custom=[ 'Custom Pfu']
+    Custom=['Custom','Custom Pfu']
     for Pol in Custom:
         if Pol==polymerase:
             return  "Custom"
-    SuperMix=['PCR SuperMix High Fidelity','PCR SuperMix High Fidelity - Invitrogen/10790020','Platinum PCR SuperMix High Fidelity','Platinum SuperMix High Fidelity','Platinum PCR SuperMix High Fidelity - Invitrogen/12532016']
+    SuperMix=['SuperMix','PCR SuperMix High Fidelity','PCR SuperMix High Fidelity - Invitrogen/10790020','Platinum PCR SuperMix High Fidelity','Platinum SuperMix High Fidelity','Platinum PCR SuperMix High Fidelity - Invitrogen/12532016']
     for Pol in SuperMix:
         if Pol==polymerase:
             return "SuperMix"
     # NEED TO REMOVE LINES WITH QUICKCHANGE LIGHTNING TEMPORARY FIX
-    Pfu=['QuikChange Lightning Enzyme','Pfu Turbo','PfuTurbo DNA Polymerase - Agilent/600250 ','PfuUltra High-Fidelity DNA Polymerase','PFU Ultra HF polymerase','PfuTurbo Cx Hotstart DNA Polymerase']
+    Pfu=['Pfu','QuikChange Lightning Enzyme','Pfu Turbo','PfuTurbo DNA Polymerase - Agilent/600250 ','PfuUltra High-Fidelity DNA Polymerase','PFU Ultra HF polymerase','PfuTurbo Cx Hotstart DNA Polymerase']
     for Pol in Pfu:
         if Pol==polymerase:
             return "Pfu"
-    PhusionHF=['Phusion High-Fidelity PCR Master Mix with HF Buffer','Phusion High-Fidelity PCR Master Mix with HF Buffer - NEB/M0531S','Phusion DNA polymerase','Phusion Hot Start II High-Fidelity DNA Polymerase','Phusion HF master mix']
+    PhusionHF=['PhusionHF','Phusion High-Fidelity PCR Master Mix with HF Buffer','Phusion High-Fidelity PCR Master Mix with HF Buffer - NEB/M0531S','Phusion DNA polymerase','Phusion Hot Start II High-Fidelity DNA Polymerase','Phusion HF master mix']
     for Pol in PhusionHF:
         if Pol==polymerase:
             return "PhusionHF"
-    Vent=['Vent DNA Polymerase']
+    Vent=['Vent','Vent DNA Polymerase']
     for Pol in Vent:
         if Pol==polymerase:
             return "Vent"
-    PrimeSTAR=['PrimeSTAR HS DNA Polymerase - Takara/R010A']
+    PrimeSTAR=['PrimeSTAR','PrimeSTAR HS DNA Polymerase - Takara/R010A']
     for Pol in PrimeSTAR:
         if Pol==polymerase:
             return "PrimeSTAR"
-    LongAmp=['LongAmp Taq DNA Polymerase - NEB/M0323S','LongAmp Taq DNA Polymerase']
+    LongAmp=['LongAmp','LongAmp Taq DNA Polymerase - NEB/M0323S','LongAmp Taq DNA Polymerase']
     for Pol in LongAmp:
         if Pol==polymerase:
             return "LongAmp"
     #if has not been found
-    Q5=['Q5 High-Fidelity DNA Polymerase']
+    Q5=['Q5','Q5 High-Fidelity DNA Polymerase']
     for Pol in Q5:
         if Pol==polymerase:
             return 'Q5'
@@ -186,6 +186,7 @@ class GC_Clamp_features(object):
     Class obtains features from GC clamp such as strength and num_GC 
     NN model strength table taken from 
     Khandelwal G, Bhyravabhotla J. A Phenomenological Model for Predicting Melting Temperatures of DNA Sequences. PLOS ONE. 2010;5: e12433. doi:10.1371/journal.pone.0012433
+    GC Clamp is defined by a G or C in the last 5 nucleotides on the 3' end of the primer.
     '''
     #initialize class variables
     clamp = ""
