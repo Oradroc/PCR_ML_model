@@ -20,10 +20,10 @@ Cordaro, Nicholas J., et al. “Optimizing Polymerase Chain Reaction (Pcr) Using
 ### Executing program
 
 For using the model as a reaction predictor: 
-* First enter user input into the Data collection spreadsheet UI macro on the first sheet of "PCR_Reaction_Collection_Form_Name.xlsx" called "input." For prediction do not ignore the outcome column which will dropped for prediction and save the output 'collected_data" sheet to YourRaw_collected_data.csv.
-* Second execute the feature engineering script using the following line: python Prediction_PCR_Feature_Engineering.py YourRaw_collected_data.csv predictMyPCRs.csv
-* Third execute the prediction script on your processed PCR data: python PCR_Predictor.py predictMyPCRs.csv outcomes 
-* You can label "outcomes" file will be output with todays date for tracking and contains the predicted outcomes of your PCRs and biophysical parameters calculated from your PCRs that may help guide your reaction redesign if necessary.
+* First enter user input into the Data collection spreadsheet UI macro on the first sheet of "PCR_Reaction_Collection_Form_Name.xlsx" called "input." For prediction do not ignore the outcome column which will dropped for prediction and save the output 'collected_data" sheet to YourRaw_collected_data.csv. Save this in the "PredictMyPCRs" folder.
+* Second run PCR_ML_FE_Predictions.py which will complete feature engineering and predict your PCR outcomes in a single line.
+* python PCR_ML_FE_Prediction.py YourRaw_collected_data.csv FeatureEngineeredData Predictions 
+* The "FeatureEngineeredData" and "Predictions" file will be output with todays date for tracking and contains the predicted outcomes of your PCRs and biophysical parameters calculated from your PCRs that may help guide your reaction redesign if necessary.
 
 ## Authors
 Contributors names
