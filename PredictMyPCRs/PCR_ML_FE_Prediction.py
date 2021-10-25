@@ -10,7 +10,13 @@ import sys
 
 RawData = sys.argv[1]
 outFile = sys.argv[2]
-Predictions = sys.argv[3]+'.xlsx'
+
+import datetime
+now = datetime.datetime.now()
+now = str(now)
+date = now.split(" ")
+
+Predictions = sys.argv[3]+date[0]+'.xlsx'
 PCR_Data = pd.read_csv(RawData)
 
 print("\nFeature Engineering...")
@@ -158,11 +164,6 @@ PCR_Data=PCR_Data[['temp1', 'melting_temp2',
 #print('before dropping duplicates',len(PCR_Data))
 #PCR_Data.drop_duplicates(keep='first',inplace=True)
 #print('after dropping duplicates',len(PCR_Data))
-
-import datetime
-now = datetime.datetime.now()
-now = str(now)
-date = now.split(" ")
 
 engfname = outFile+date[0]+".csv"
 print("Writing Engineered Features to csv:", engfname)
