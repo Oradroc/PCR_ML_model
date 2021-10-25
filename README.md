@@ -8,7 +8,7 @@ A tool for researchers in the biological sciences to predict PCR outcome of a de
 
 Information about model development can be found on biorxiv.
 
-Cordaro, Nicholas J., et al. “Optimizing Polymerase Chain Reaction (Pcr) Using Machine Learning.” 2021, doi:10.1101/2021.08.12.455589. 
+Cordaro, Nicholas J., et al. “Optimizing Polymerase Chain Reaction (PCR) Using Machine Learning.” 2021, doi:10.1101/2021.08.12.455589. 
 
 ## Getting Started
 
