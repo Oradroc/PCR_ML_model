@@ -28,8 +28,8 @@ For using the model as a reaction predictor:
 ## Authors
 Contributors names
 
-Nicholas Cordaro
+Nicholas Cordaro, B.A.
 
-Andy Kavran
+Andy Kavran, PhD
 
-Aaron Clauset
+Aaron Clauset, PhD
